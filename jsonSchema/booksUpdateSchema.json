@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "title": { "type": "string" },
+        "author": { "type": "string" },
+        "isbn": { "type": "string" },
+        "amazon_url": { "type": "string", "format": "uri" },
+        "language": { "type": "string" },
+        "pages": { "type": "integer", "minimum": 1 },
+        "publisher": { "type": "string" },
+        "year": { "type": "integer", "minimum": 0 }
+    },
+    "minProperties": 1,
+    "additionalProperties": false
+
+}
+

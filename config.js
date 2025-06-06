@@ -1,7 +1,7 @@
 /** Common config for bookstore. */
+require("dotenv").config();
 
-
-let DB_URI = `postgresql://`;
+let DB_URI;
 
 if (process.env.NODE_ENV === "test") {
   DB_URI = `${DB_URI}/books-test`;
